@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap" rel="stylesheet">
+
+        <title>Frontend Mentor | Blog preview card</title>
+
+        <style>
+            :root {
+                --color-yellow: #F4D04E;
+                --color-black: #111;
+                --color-white: #FFF;
+                --color-gray: #6B6B6B;
+                --border-radius-card: 20px;
+                --border-radius-tag: 4px;
+                --border-radius-image: 20px;
+                --spacing-sm: 12px;
+                --spacing-md: 24px;
+                --font-size-sm: 14px;
+                --font-size-title: 23px;
+            }
+            * {
+                box-sizing: border-box;
+                font-family: 'Figtree', sans-serif;
+            }
+            body {
+                margin: 0;
+                background-color: var(--color-yellow);
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                min-height: 100vh;
+            }
+            .container {
+                background-color: var(--color-white);
+                width: 87.2%;
+                max-width: 384px;
+                padding: var(--spacing-md);
+                border: 1px solid var(--color-black);
+                border-radius: var(--border-radius-card);
+                border-right: 8px solid var(--color-black);
+                border-bottom: 8px solid var(--color-black);
+                overflow: hidden;
+            }
+            .illustration-image {
+                width: 100%;
+                margin-bottom: var(--spacing-md);
+                border-radius: var(--border-radius-image);
+                display: block;
+            }
+            .tag {
+                background-color: var(--color-yellow);
+                width: fit-content;
+                padding: 4px var(--spacing-sm);
+                margin: 0 0 var(--spacing-sm) 0;
+                font-size: var(--font-size-sm);
+                font-weight: 800;
+                border-radius: var(--border-radius-tag);
+                color: var(--color-black);
+            }
+            .published-date {
+                margin: 0;
+                font-size: var(--font-size-sm);
+                font-weight: 500;
+                color: var(--color-black);
+            }
+            .card-name {
+                margin: var(--spacing-sm) 0;
+                font-size: var(--font-size-title);
+                font-weight: 800;
+                color: var(--color-black);
+            }
+            .card-name:hover,
+            .card-name:active,
+            .card-name:focus {
+                color: var(--color-yellow);
+            }
+            .description {
+                margin: 0 0 var(--spacing-md) 0;
+                font-size: var(--font-size-sm);
+                font-weight: 500;
+                line-height: 150%;
+                color: var(--color-gray);
+            }
+            .user-data {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                height: 32px;
+            }
+            .profile-image {
+                height: 32px;
+                width: 32px;
+            }
+            .author-name {
+                margin: 0 0 0 var(--spacing-sm);
+                font-size: var(--font-size-sm);
+                font-weight: 800;
+                color: var(--color-black);
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <img src="./assets/images/illustration-article.svg" alt="illustration-article-image" class="illustration-image">
+                <p class="tag">Learning</p>
+                <p class="published-date">Published 21 Dec 2023</p>
+                <h2 class="card-name">HTML & CSS foundations</h2>
+                <p class="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+                <div class="user-data">
+                    <img src="./assets/images/image-avatar.webp" alt="user-image" class="profile-image">
+                    <p class="author-name">Greg Hooper</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
