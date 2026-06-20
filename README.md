@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/Death8959/BLOG-PREVIEW-CARD-MAIN)
+- Live Site URL: [Live site URL](https://death8959.github.io/BLOG-PREVIEW-CARD-MAIN/)
 
 ## My process
 
